@@ -1,0 +1,111 @@
+LINUX BASH MASTERY CURRICULUM
+========================================
+
+LEVEL 1: BEGINNER — Shell Foundations
+----------------------------------------
+Goal: Become comfortable with bash, navigation, and safe scripting.
+
+Core Skills:
+- What is bash; interactive vs non-interactive shells
+- Terminal basics (prompt, stdin/stdout/stderr)
+- Filesystem overview: /, /etc, /usr, /var, /home
+- Commands: pwd, ls, cd, cat, less, head, tail, file, stat
+- Globbing: *, ?, []
+- Redirection and pipes: >, >>, <, 2>, |
+- Running scripts: chmod +x, shebang line
+- Safety: VM snapshots, non-root usage, sudo basics
+
+Hands-on:
+- Create a test directory tree and explore
+- Write hello.sh that prints username + time
+- Inspect logs with head/tail
+- Build a pipeline (ls -la | grep '^d' | wc -l)
+
+Mini Projects:
+- File inventory script
+- Simple README generator
+
+------------------------------------------------------------
+
+LEVEL 2: INTERMEDIATE — Automation and Permissions
+----------------------------------------------------
+Goal: Automate tasks with bash, understand permissions, use process tools.
+
+Core Skills:
+- Variables, positional params ($1, $@)
+- If statements, tests, exit codes
+- Loops: for, while, until
+- Functions, set -euo pipefail
+- chmod, chown, groups, numeric vs symbolic modes
+- Process tools: ps, top, htop, kill
+- Basic package manager usage
+- grep, sed, awk, cut, sort, uniq
+- User cron jobs
+
+Hands-on:
+- Backup script with timestamps and rotation
+- Practice permissions on test files
+- Extract fields from /etc/passwd
+- Create cron jobs (VM only)
+
+Mini Projects:
+- Disk inspector (top 10 largest files)
+- Process watchdog (dummy process only)
+
+------------------------------------------------------------
+
+LEVEL 3: ADVANCED — System Administration with Bash
+----------------------------------------------------
+Goal: Use bash to manage services, storage, networking, and configuration.
+
+Core Skills:
+- Arrays, associative arrays, here-docs, traps
+- sudo privilege separation; visudo (VM only)
+- systemctl (status/start/stop/enable)
+- Disk tools: lsblk, fdisk -l (read), mount, loopback images
+- Networking: ip, ss, ping, traceroute
+- SSH automation: ssh-copy-id, scp, rsync
+- Script idempotence and testing
+
+Hands-on:
+- Create/mount loopback storage
+- Automate ssh keypair setup
+- Write user environment setup script
+
+Mini Projects:
+- Provisioning script (tools + dotfiles)
+- Log rotation helper
+
+------------------------------------------------------------
+
+LEVEL 4: PRO — Systems Automation, Recovery, and Tooling
+--------------------------------------------------------
+Goal: Build professional-grade automation, recovery scripts, and service tooling.
+
+Core Skills:
+- Argument parsing (getopts)
+- Full logging, JSON output, dry-run mode
+- Retry logic, lockfiles, concurrency (flock)
+- Parsing journalctl; lightweight health checks
+- Rescue scripting (fsck wrappers, chroot recovery in VM)
+- Packaging scripts; simple .deb or installation scripts
+- Security: audit checks, ssh hardening
+
+Mini Projects (Capstone Options):
+- Linux Automation Toolkit (monitoring, backups, logs, health checks, installers)
+- Recovery toolkit (mount offline partitions, fix broken installs in VM)
+
+Assessment:
+- Complete a full automation project with documentation, install/uninstall, and testing.
+
+------------------------------------------------------------
+
+Recommended Structure for Practice Projects
+-------------------------------------------
+- Always work in VMs with snapshots enabled
+- Keep scripts under version control
+- Build incrementally: start small, add logging and error handling later
+- Maintain a personal scripts repo for all exercises
+
+------------------------------------------------------------
+END OF FILE
