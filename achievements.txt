@@ -1,0 +1,13 @@
+============================= DATE: Nov 10, 2025 =======
+
+- Learned core filesystem path indicators:
+  / (root), ~ (home), . (current directory), .. (parent directory).
+
+- Understood the difference between absolute and relative pathnames:
+  absolute paths start at '/', relative paths resolve from the current directory.
+
+- Reviewed Linux users and privileges:
+  each user has a private home directory; access depends on ownership and permissions.
+
+- Practiced switching users correctly:
+  “su - username” loads the target user’s environment; cd alone cannot enter another user’s home.
